@@ -1,7 +1,151 @@
 <!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="愛媛県今治市・鵜島の歴史、船、例大祭、暮らし、観光とアクセスを紹介する個人運営サイト" name="description"/><title>Discover USHIMA</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{serif:['"Shippori Mincho"','serif'],sans:['"Zen Kaku Gothic New"','sans-serif']},colors:{ink:'#0E1F29',sea:'#163A4C',foam:'#F2F4F3',mist:'#D9E3E1',lamp:'#E3B04B'}}}}</script>
+<style type="text/tailwindcss">
+@layer components{
+ .wrap{@apply mx-auto w-full max-w-[1200px] px-6 md:px-10}
+ .eyebrow{@apply inline-flex items-center gap-3 text-[0.7rem] tracking-[0.2em] opacity-70 mb-5 before:content-[''] before:block before:w-8 before:h-px before:bg-current}
+ .textlink{@apply inline-block mt-8 border-b border-current pb-1 transition-opacity hover:opacity-60}
+ .h2{@apply font-serif font-bold text-[1.9rem] leading-[1.5] md:text-[2.75rem] md:leading-[1.45]}
+}
+html{scroll-behavior:smooth}
+body{font-feature-settings:"palt"}
+:focus-visible{outline:2px solid #E3B04B;outline-offset:3px}
+#head.solid{background:rgba(242,244,243,.96);color:#0E1F29;box-shadow:0 1px 0 rgba(14,31,41,.08)}
+#head.open{background:transparent;color:#fff;box-shadow:none}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity 1.2s cubic-bezier(.2,.7,.2,1),transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.js .rv-img{opacity:0;transform:scale(1.05);transition:opacity 1.6s ease,transform 1.8s cubic-bezier(.2,.7,.2,1)}
+.js .in{opacity:1;transform:none}
+@keyframes zoom{from{transform:scale(1.08)}to{transform:scale(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero-img{animation:zoom 2.8s cubic-bezier(.2,.7,.2,1) both}
+.hero-h{animation:rise 1.8s .5s cubic-bezier(.2,.7,.2,1) both}
+.hero-s{animation:rise 1.4s 1.1s cubic-bezier(.2,.7,.2,1) both}
+@media (min-width:768px){html[lang=ja] .vt{writing-mode:vertical-rl;max-height:60svh;letter-spacing:.14em;line-height:1.75}}
+@media (prefers-reduced-motion:reduce){.js .rv,.js .rv-img{opacity:1;transform:none;transition:none}.hero-img,.hero-h,.hero-s{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body class="bg-foam font-sans text-ink antialiased leading-loose">
 
-<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="愛媛県今治市・鵜島の歴史、船、例大祭、暮らし、観光とアクセスを紹介する個人運営サイト" name="description"/><title>Discover USHIMA</title><link href="style.css" rel="stylesheet"/></head><body><header class="sitehead shell"><a class="brand" href="index.html">USHIMA<small>Discover USHIMA</small></a><button aria-controls="nav" aria-expanded="false" class="menu" id="menu">MENU</button><nav class="nav" id="nav"><a href="about.html"><span data-en="About" data-ja="島について">島について</span></a><a href="murakami.html"><span data-en="Murakami" data-ja="村上海賊">村上海賊</span></a><a href="industry.html"><span data-en="Maritime history" data-ja="歴史・船・産業">歴史・船・産業</span></a><a href="festival.html"><span data-en="Festival" data-ja="例大祭">例大祭</span></a><a href="sea.html"><span data-en="Explore" data-ja="海と観光">海と観光</span></a><a href="access.html"><span data-en="Access" data-ja="アクセス">アクセス</span></a><button aria-label="Switch Japanese and English" class="lang" id="lang" title="一部の見出し・説明文の言語切替（全ページ翻訳ではありません）">EN</button></nav></header><main><div class="hero hero-cinematic"><img alt="瀬戸内海の島々を望む全景" decoding="async" src="assets/hero.webp"/><div class="overlay"><span class="eyebrow" style="color:#fff">USHIMA / SETOUCHI / JAPAN</span><h1 data-en="A little island worth discovering." data-ja="瀬戸内に、こんな島があった。">瀬戸内に、こんな島があった。</h1><p><span data-en="Imabari, Ehime · Seto Inland Sea" data-ja="愛媛県今治市・瀬戸内海">愛媛県今治市・瀬戸内海</span></p><a class="hero-cta" href="about.html">鵜島の物語を読む <span aria-hidden="true">↗</span></a></div></div><div class="intro shell"><div><span class="eyebrow">THE ISLAND</span><h2><span data-en="Take your time on Ushima" data-ja="島時間を、楽しもう。">島時間を、楽しもう。</span></h2></div><p><span data-en="Ushima is a small island in Imabari, Ehime. Nearby Noshima was a stronghold of the Murakami Kaizoku, and historical accounts also connect Ushima to boatbuilding and maritime transport. Explore the island through its shore, village and history." data-ja="鵜島は、愛媛県今治市にある瀬戸内海の島。近くには村上海賊の拠点だった能島があり、鵜島にも船づくりや海上交通に関わる歴史が伝わっています。港、集落、海辺の風景から島の暮らしを紹介します。">鵜島は、愛媛県今治市にある瀬戸内海の島。近くには村上海賊の拠点だった能島があり、鵜島にも船づくりや海上交通に関わる歴史が伝わっています。港、集落、海辺の風景から島の暮らしを紹介します。</span></p></div><section class="magazine-lead shell"><div><span class="eyebrow">A LITTLE ISLAND GUIDE</span><h2>港から始まる、<br/>小さな島の旅。</h2><p>船で島に渡ったら、まずは海辺をのんびり散歩。潮の流れ、船の行き交う景色、静かな集落。鵜島の楽しみ方は、急がないことかもしれません。</p><a class="textlink" href="sea.html">海と風景を見に行く →</a></div><img alt="島へ向かう船と海の風景" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/ferry.webp"/></section><section class="section shell"><div class="sectionhead"><div><span class="eyebrow">01 / STORIES</span><h2><span data-en="Discover the stories of Ushima" data-ja="もっと知りたい、鵜島のこと。">もっと知りたい、鵜島のこと。</span></h2></div><p><span data-en="From the Murakami maritime clan to boatbuilding and the island’s annual shrine festival." data-ja="村上海賊の時代から、船の仕事、地域に受け継がれる例大祭まで。">村上海賊の時代から、船の仕事、地域に受け継がれる例大祭まで。</span></p></div><div class="feature-list">
-<a class="feature-link feature-editorial" href="murakami.html"><span class="feature-num">01</span><div class="feature-copy"><h3><span data-en="Murakami Kaizoku" data-ja="村上海賊">村上海賊</span></h3><p><span data-en="Noshima Castle and the maritime history around Ushima" data-ja="能島城と鵜島を取り巻く海の歴史">能島城と鵜島を取り巻く海の歴史</span></p></div><span aria-hidden="true" class="feature-arrow">↗</span><figure class="feature-image"><img alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/current_tour.webp"/></figure></a>
-<a class="feature-link feature-editorial" href="industry.html"><span class="feature-num">02</span><div class="feature-copy"><h3><span data-en="History, boats &amp; industry" data-ja="歴史・船・産業">歴史・船・産業</span></h3><p><span data-en="Shipwrights, shipbuilding and maritime trade" data-ja="船大工、造船、海運の歩み">船大工、造船、海運の歩み</span></p></div><span aria-hidden="true" class="feature-arrow">↗</span><figure class="feature-image"><img alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/boat.webp"/></figure></a>
-<a class="feature-link feature-editorial" href="festival.html"><span class="feature-num">03</span><div class="feature-copy"><h3><span data-en="Annual shrine festival" data-ja="例大祭">例大祭</span></h3><p><span data-en="A day when the island gathers for its shrine festival" data-ja="神輿と島の人々が集まる日">神輿と島の人々が集まる日</span></p></div><span aria-hidden="true" class="feature-arrow">↗</span><figure class="feature-image"><img alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/festival_mikoshi.webp"/></figure></a>
-</div></section><div class="image-interlude"><img alt="瀬戸内海の潮流と島並み" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/sea.webp"/><div class="image-interlude-copy"><span>THE SETO INLAND SEA</span><p>海を眺めて、ひと休み。</p></div></div><section class="magazine-band"><div class="shell"><img alt="例大祭に集まる島の人々" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/festival_group.webp"/><div><span class="eyebrow">PEOPLE &amp; CULTURE</span><h2>島の人にとって、<br/>大切な一日。</h2><p>祭りの日、島に人々が集まる。景色だけでは分からない鵜島の魅力は、受け継がれる行事や人のつながりにもあります。</p><a class="textlink" href="festival.html">例大祭のことを知る →</a></div></div></section><section class="section shell history-home"><div class="sectionhead"><div><span class="eyebrow">HISTORY / USHIMA</span><h2><span data-en="Ushima and its maritime past" data-ja="鵜島と海の歴史">鵜島と海の歴史</span></h2></div><p><span data-en="Nearby Noshima was a base of the Murakami maritime groups. Regional accounts also describe a shipyard and shipwright residences on Ushima. Explore the island’s history through its boats and maritime work." data-ja="鵜島のすぐ近くにある能島は、村上海賊の拠点でした。郷土史には、鵜島に造船所や船大工屋敷があったことも記されています。海を渡る船と、その船を支えた仕事から島の歴史をたどります。">鵜島のすぐ近くにある能島は、村上海賊の拠点でした。郷土史には、鵜島に造船所や船大工屋敷があったことも記されています。海を渡る船と、その船を支えた仕事から島の歴史をたどります。</span></p></div><figure class="integrated-photo history-extra"><img alt="島の高台" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/tower.webp"/><figcaption>島の高台</figcaption></figure><div class="history-links"><a href="murakami.html"><span data-en="Murakami Kaizoku and Ushima →" data-ja="村上海賊と鵜島の関係 →">村上海賊と鵜島の関係 →</span></a><a href="industry.html"><span data-en="Shipbuilding and maritime history →" data-ja="造船・和船・海運の歴史 →">造船・和船・海運の歴史 →</span></a></div><div class="heritage-note"><div><span class="eyebrow">CULTURE / PILGRIMAGE</span><h3>島を歩いて出会う、三十三観音。</h3><p>鵜島には「鵜島三十三観音」と呼ばれる信仰の文化が伝わっています。海の歴史だけではない、島の祈りと暮らしを知る入口です。現地を訪れる際は、生活の場であることに配慮しながら歩いてみてください。</p><a class="textlink" href="about.html#kannon">三十三観音について読む →</a></div><img alt="鵜島の風景の一部" decoding="async" loading="lazy" src="assets/detail.webp"/></div></section><section class="section shell"><div class="split"><figure class="photo"><img alt="夕暮れの海辺" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/sunset.webp"/><figcaption><span data-en="Evening on the shore" data-ja="海辺の夕暮れ">海辺の夕暮れ</span></figcaption></figure><div><span class="eyebrow">02 / EVERYDAY LIFE</span><h3><span data-en="Life by the water" data-ja="海のそばで暮らす">海のそばで暮らす</span></h3><p><span data-en="Boats, quiet evenings and everyday scenes along the water are part of island life." data-ja="船のある風景や静かな夕暮れ。鵜島の暮らしは、島を歩くと見えてくる身近な景色の中にあります。">船のある風景や静かな夕暮れ。鵜島の暮らしは、島を歩くと見えてくる身近な景色の中にあります。</span></p><a class="textlink" href="about.html"><span data-en="About Ushima →" data-ja="島について →">島について →</span></a><figure class="integrated-photo life-extra"><img alt="島で出会う風景" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/ducks.webp"/><figcaption>島で出会う風景</figcaption></figure></div></div></section><section class="section shell"><div class="split reverse"><div><span class="eyebrow">03 / VISIT</span><h3><span data-en="Arrive by boat" data-ja="船で渡る、小さな島">船で渡る、小さな島</span></h3><p><span data-en="Regular boats connect Ushima with Miyakubo Port on Oshima and Oura Port on Hakatajima. Check the timetable before travelling." data-ja="鵜島へは大島の宮窪港、または伯方島の尾浦港から定期船で渡れます。訪れる前に運航時刻をご確認ください。">鵜島へは大島の宮窪港、または伯方島の尾浦港から定期船で渡れます。訪れる前に運航時刻をご確認ください。</span></p><a class="textlink" href="access.html"><span data-en="Plan your visit →" data-ja="アクセスを見る →">アクセスを見る →</span></a></div><figure class="photo"><img alt="鵜島の海辺" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/beach.webp"/><figcaption><span data-en="Along the shore" data-ja="海辺の風景">海辺の風景</span></figcaption></figure><figure class="integrated-photo visit-extra"><img alt="島の小さな発見" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/detail.webp"/><figcaption>島の小さな発見</figcaption></figure></div></section><section class="magazine-end shell"><span class="eyebrow">PLAN YOUR VISIT</span><h2>次の旅は、鵜島へ。</h2><p>小さな島だからこそ、船の時刻を確かめて、ゆっくり訪れてください。</p><a href="access.html">アクセス・船の情報を見る ↗</a></section></main><footer class="foot shell"><span>© 2026 Discover USHIMA · <span data-en="Independently operated, unofficial website" data-ja="個人運営の非公式紹介サイト">個人運営の非公式紹介サイト</span></span><a href="index.html"><span data-en="Back to top ↑" data-ja="トップページへ ↑">トップページへ ↑</span></a></footer><script src="script.js"></script></body></html>
+<header id="head" class="sitehead fixed inset-x-0 top-0 z-40 text-white transition-colors duration-500">
+ <div class="wrap flex items-center justify-between py-4 md:py-5">
+  <a class="brand relative z-[60] font-serif text-lg tracking-[0.3em] leading-none" href="index.html">USHIMA<small class="mt-2 block text-[0.6rem] tracking-[0.16em] opacity-70">Discover USHIMA</small></a>
+  <button aria-controls="nav" aria-expanded="false" class="menu relative z-[60] border border-current px-4 py-2 text-xs tracking-[0.2em] md:hidden" id="menu">MENU</button>
+  <nav class="nav hidden fixed inset-0 z-50 flex-col justify-center gap-7 bg-sea px-8 font-serif text-2xl text-white md:static md:flex md:flex-row md:items-center md:gap-8 md:bg-transparent md:p-0 md:font-sans md:text-[0.82rem] md:text-inherit" id="nav">
+   <a class="hover:opacity-60 transition-opacity" href="about.html"><span data-en="About" data-ja="島について">島について</span></a><a class="hover:opacity-60 transition-opacity" href="murakami.html"><span data-en="Murakami" data-ja="村上海賊">村上海賊</span></a><a class="hover:opacity-60 transition-opacity" href="industry.html"><span data-en="Maritime history" data-ja="歴史・船・産業">歴史・船・産業</span></a><a class="hover:opacity-60 transition-opacity" href="festival.html"><span data-en="Festival" data-ja="例大祭">例大祭</span></a><a class="hover:opacity-60 transition-opacity" href="sea.html"><span data-en="Explore" data-ja="海と観光">海と観光</span></a><a class="hover:opacity-60 transition-opacity" href="access.html"><span data-en="Access" data-ja="アクセス">アクセス</span></a><button aria-label="Switch Japanese and English" class="lang self-start border border-current px-3 py-1 font-sans text-xs tracking-widest md:self-auto" id="lang" title="一部の見出し・説明文の言語切替（全ページ翻訳ではありません）">EN</button>
+  </nav>
+ </div>
+</header>
+
+<main>
+<div class="hero hero-cinematic relative h-[100svh] min-h-[560px] overflow-hidden bg-sea text-white">
+ <img class="hero-img absolute inset-0 h-full w-full object-cover" alt="瀬戸内海の島々を望む全景" decoding="async" src="assets/hero.webp"/>
+ <div class="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-ink/45"></div>
+ <div class="overlay wrap absolute inset-0 left-1/2 -translate-x-1/2 flex flex-col justify-end pb-14 md:pb-20">
+  <span class="eyebrow hero-s !text-white">USHIMA / SETOUCHI / JAPAN</span>
+  <h1 class="hero-h vt font-serif font-bold text-[2.5rem] leading-[1.45] md:absolute md:right-10 md:top-28 md:text-[clamp(2rem,4.2vw,3.5rem)]" data-en="A little island worth discovering." data-ja="瀬戸内に、こんな島があった。">瀬戸内に、こんな島があった。</h1>
+  <p class="hero-s mt-4 text-sm md:text-base"><span data-en="Imabari, Ehime · Seto Inland Sea" data-ja="愛媛県今治市・瀬戸内海">愛媛県今治市・瀬戸内海</span></p>
+  <a class="hero-cta hero-s mt-8 inline-flex w-fit items-center gap-3 border-b border-lamp pb-2 transition-opacity hover:opacity-70" href="about.html">鵜島の物語を読む <span aria-hidden="true" class="text-lamp">↗</span></a>
+ </div>
+</div>
+
+<div class="intro wrap grid gap-10 py-24 md:grid-cols-12 md:gap-8 md:py-44">
+ <div class="rv md:col-span-5"><span class="eyebrow">THE ISLAND</span><h2 class="h2"><span data-en="Take your time on Ushima" data-ja="島時間を、楽しもう。">島時間を、楽しもう。</span></h2></div>
+ <p class="rv text-[1.02rem] md:col-span-6 md:col-start-7 md:pt-12 md:text-lg md:leading-[2.1]"><span data-en="Ushima is a small island in Imabari, Ehime. Nearby Noshima was a stronghold of the Murakami Kaizoku, and historical accounts also connect Ushima to boatbuilding and maritime transport. Explore the island through its shore, village and history." data-ja="鵜島は、愛媛県今治市にある瀬戸内海の島。近くには村上海賊の拠点だった能島があり、鵜島にも船づくりや海上交通に関わる歴史が伝わっています。港、集落、海辺の風景から島の暮らしを紹介します。">鵜島は、愛媛県今治市にある瀬戸内海の島。近くには村上海賊の拠点だった能島があり、鵜島にも船づくりや海上交通に関わる歴史が伝わっています。港、集落、海辺の風景から島の暮らしを紹介します。</span></p>
+</div>
+
+<section class="magazine-lead wrap grid items-center gap-10 pb-24 md:grid-cols-12 md:gap-8 md:pb-44">
+ <div class="rv md:col-span-5"><span class="eyebrow">A LITTLE ISLAND GUIDE</span><h2 class="h2">港から始まる、<br/>小さな島の旅。</h2><p class="mt-6">船で島に渡ったら、まずは海辺をのんびり散歩。潮の流れ、船の行き交う景色、静かな集落。鵜島の楽しみ方は、急がないことかもしれません。</p><a class="textlink" href="sea.html">海と風景を見に行く →</a></div>
+ <div class="overflow-hidden md:col-span-6 md:col-start-7 md:mt-28"><img class="rv-img aspect-[4/5] w-full object-cover md:aspect-[5/6]" alt="島へ向かう船と海の風景" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/ferry.webp"/></div>
+</section>
+
+<section class="section wrap pb-24 md:pb-44">
+ <div class="sectionhead rv mb-12 grid gap-6 md:mb-20 md:grid-cols-12 md:items-end md:gap-8">
+  <div class="md:col-span-7"><span class="eyebrow">01 / STORIES</span><h2 class="h2"><span data-en="Discover the stories of Ushima" data-ja="もっと知りたい、鵜島のこと。">もっと知りたい、鵜島のこと。</span></h2></div>
+  <p class="text-ink/70 md:col-span-5"><span data-en="From the Murakami maritime clan to boatbuilding and the island’s annual shrine festival." data-ja="村上海賊の時代から、船の仕事、地域に受け継がれる例大祭まで。">村上海賊の時代から、船の仕事、地域に受け継がれる例大祭まで。</span></p>
+ </div>
+ <div class="feature-list border-b border-sea/20">
+<a class="feature-link feature-editorial group grid grid-cols-[2.5rem_1fr_auto] items-start gap-x-4 gap-y-6 border-t border-sea/20 py-10 md:grid-cols-12 md:gap-x-8 md:py-14" href="murakami.html"><span class="feature-num font-serif text-xl text-sea/60 md:col-span-1 md:row-start-1 md:text-2xl">01</span><div class="feature-copy md:col-span-5 md:col-start-2 md:row-start-1"><h3 class="font-serif text-[1.7rem] font-bold leading-snug md:text-5xl"><span data-en="Murakami Kaizoku" data-ja="村上海賊">村上海賊</span></h3><p class="mt-3 text-ink/70 md:mt-5"><span data-en="Noshima Castle and the maritime history around Ushima" data-ja="能島城と鵜島を取り巻く海の歴史">能島城と鵜島を取り巻く海の歴史</span></p></div><span aria-hidden="true" class="feature-arrow text-2xl transition duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 md:col-span-1 md:col-start-7 md:row-start-1">↗</span><figure class="feature-image col-span-3 aspect-[4/3] overflow-hidden md:col-span-5 md:col-start-8 md:row-start-1"><img class="rv-img h-full w-full object-cover transition-transform duration-[1600ms] group-hover:scale-105" alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/current_tour.webp"/></figure></a>
+<a class="feature-link feature-editorial group grid grid-cols-[2.5rem_1fr_auto] items-start gap-x-4 gap-y-6 border-t border-sea/20 py-10 md:grid-cols-12 md:gap-x-8 md:py-14" href="industry.html"><span class="feature-num font-serif text-xl text-sea/60 md:col-span-1 md:row-start-1 md:text-2xl">02</span><div class="feature-copy md:col-span-5 md:col-start-2 md:row-start-1"><h3 class="font-serif text-[1.7rem] font-bold leading-snug md:text-5xl"><span data-en="History, boats &amp; industry" data-ja="歴史・船・産業">歴史・船・産業</span></h3><p class="mt-3 text-ink/70 md:mt-5"><span data-en="Shipwrights, shipbuilding and maritime trade" data-ja="船大工、造船、海運の歩み">船大工、造船、海運の歩み</span></p></div><span aria-hidden="true" class="feature-arrow text-2xl transition duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 md:col-span-1 md:col-start-7 md:row-start-1">↗</span><figure class="feature-image col-span-3 aspect-[4/3] overflow-hidden md:col-span-5 md:col-start-8 md:row-start-1"><img class="rv-img h-full w-full object-cover transition-transform duration-[1600ms] group-hover:scale-105" alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/boat.webp"/></figure></a>
+<a class="feature-link feature-editorial group grid grid-cols-[2.5rem_1fr_auto] items-start gap-x-4 gap-y-6 border-t border-sea/20 py-10 md:grid-cols-12 md:gap-x-8 md:py-14" href="festival.html"><span class="feature-num font-serif text-xl text-sea/60 md:col-span-1 md:row-start-1 md:text-2xl">03</span><div class="feature-copy md:col-span-5 md:col-start-2 md:row-start-1"><h3 class="font-serif text-[1.7rem] font-bold leading-snug md:text-5xl"><span data-en="Annual shrine festival" data-ja="例大祭">例大祭</span></h3><p class="mt-3 text-ink/70 md:mt-5"><span data-en="A day when the island gathers for its shrine festival" data-ja="神輿と島の人々が集まる日">神輿と島の人々が集まる日</span></p></div><span aria-hidden="true" class="feature-arrow text-2xl transition duration-500 group-hover:-translate-y-1 group-hover:translate-x-1 md:col-span-1 md:col-start-7 md:row-start-1">↗</span><figure class="feature-image col-span-3 aspect-[4/3] overflow-hidden md:col-span-5 md:col-start-8 md:row-start-1"><img class="rv-img h-full w-full object-cover transition-transform duration-[1600ms] group-hover:scale-105" alt="鵜島の歴史と文化を伝える写真" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/festival_mikoshi.webp"/></figure></a>
+ </div>
+</section>
+
+<div class="image-interlude relative h-[75svh] min-h-[420px] overflow-hidden bg-sea text-white">
+ <img data-par class="absolute -top-[10%] h-[120%] w-full object-cover" alt="瀬戸内海の潮流と島並み" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/sea.webp"/>
+ <div class="absolute inset-0 bg-gradient-to-t from-ink/70 to-transparent"></div>
+ <div class="image-interlude-copy wrap rv absolute bottom-0 left-1/2 -translate-x-1/2 pb-12 md:pb-20"><span class="eyebrow">THE SETO INLAND SEA</span><p class="font-serif text-3xl font-bold leading-snug md:text-6xl">海を眺めて、ひと休み。</p></div>
+</div>
+
+<section class="magazine-band bg-sea py-24 text-foam md:py-40">
+ <div class="shell wrap grid items-center gap-10 md:grid-cols-12 md:gap-8">
+  <div class="overflow-hidden md:col-span-6"><img class="rv-img aspect-[4/3] w-full object-cover" alt="例大祭に集まる島の人々" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/festival_group.webp"/></div>
+  <div class="rv md:col-span-5 md:col-start-8"><span class="eyebrow">PEOPLE &amp; CULTURE</span><h2 class="h2">島の人にとって、<br/>大切な一日。</h2><p class="mt-6 text-foam/80">祭りの日、島に人々が集まる。景色だけでは分からない鵜島の魅力は、受け継がれる行事や人のつながりにもあります。</p><a class="textlink" href="festival.html">例大祭のことを知る →</a></div>
+ </div>
+</section>
+
+<section class="section wrap history-home py-24 md:py-40">
+ <div class="sectionhead rv mb-12 grid gap-6 md:mb-16 md:grid-cols-12 md:gap-8">
+  <div class="md:col-span-5"><span class="eyebrow">HISTORY / USHIMA</span><h2 class="h2"><span data-en="Ushima and its maritime past" data-ja="鵜島と海の歴史">鵜島と海の歴史</span></h2></div>
+  <p class="text-ink/80 md:col-span-6 md:col-start-7 md:pt-12"><span data-en="Nearby Noshima was a base of the Murakami maritime groups. Regional accounts also describe a shipyard and shipwright residences on Ushima. Explore the island’s history through its boats and maritime work." data-ja="鵜島のすぐ近くにある能島は、村上海賊の拠点でした。郷土史には、鵜島に造船所や船大工屋敷があったことも記されています。海を渡る船と、その船を支えた仕事から島の歴史をたどります。">鵜島のすぐ近くにある能島は、村上海賊の拠点でした。郷土史には、鵜島に造船所や船大工屋敷があったことも記されています。海を渡る船と、その船を支えた仕事から島の歴史をたどります。</span></p>
+ </div>
+ <figure class="integrated-photo history-extra"><div class="overflow-hidden"><img class="rv-img aspect-[4/3] w-full object-cover md:aspect-[21/9]" alt="島の高台" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/tower.webp"/></div><figcaption class="mt-3 text-sm text-ink/60">島の高台</figcaption></figure>
+ <div class="history-links mt-14 border-b border-sea/20 md:mt-20">
+  <a class="flex items-center justify-between border-t border-sea/20 py-6 font-serif text-lg transition-all hover:pl-3 md:text-2xl" href="murakami.html"><span data-en="Murakami Kaizoku and Ushima →" data-ja="村上海賊と鵜島の関係 →">村上海賊と鵜島の関係 →</span></a>
+  <a class="flex items-center justify-between border-t border-sea/20 py-6 font-serif text-lg transition-all hover:pl-3 md:text-2xl" href="industry.html"><span data-en="Shipbuilding and maritime history →" data-ja="造船・和船・海運の歴史 →">造船・和船・海運の歴史 →</span></a>
+ </div>
+ <div class="heritage-note mt-20 grid items-center gap-10 bg-mist p-7 md:mt-32 md:grid-cols-12 md:gap-8 md:p-14">
+  <div class="rv md:col-span-6"><span class="eyebrow">CULTURE / PILGRIMAGE</span><h3 class="font-serif text-2xl font-bold leading-snug md:text-4xl">島を歩いて出会う、三十三観音。</h3><p class="mt-6">鵜島には「鵜島三十三観音」と呼ばれる信仰の文化が伝わっています。海の歴史だけではない、島の祈りと暮らしを知る入口です。現地を訪れる際は、生活の場であることに配慮しながら歩いてみてください。</p><a class="textlink" href="about.html#kannon">三十三観音について読む →</a></div>
+  <div class="overflow-hidden md:col-span-5 md:col-start-8"><img class="rv-img aspect-[4/3] w-full object-cover" alt="鵜島の風景の一部" decoding="async" loading="lazy" src="assets/detail.webp"/></div>
+ </div>
+</section>
+
+<section class="section wrap pb-24 md:pb-40">
+ <div class="split grid items-start gap-10 md:grid-cols-12 md:gap-8">
+  <figure class="photo md:col-span-7"><div class="overflow-hidden"><img class="rv-img aspect-[4/3] w-full object-cover md:aspect-[4/3.4]" alt="夕暮れの海辺" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/sunset.webp"/></div><figcaption class="mt-3 text-sm text-ink/60"><span data-en="Evening on the shore" data-ja="海辺の夕暮れ">海辺の夕暮れ</span></figcaption></figure>
+  <div class="rv md:col-span-4 md:col-start-9 md:pt-16"><span class="eyebrow">02 / EVERYDAY LIFE</span><h3 class="h2 !text-[1.7rem] md:!text-4xl"><span data-en="Life by the water" data-ja="海のそばで暮らす">海のそばで暮らす</span></h3><p class="mt-6"><span data-en="Boats, quiet evenings and everyday scenes along the water are part of island life." data-ja="船のある風景や静かな夕暮れ。鵜島の暮らしは、島を歩くと見えてくる身近な景色の中にあります。">船のある風景や静かな夕暮れ。鵜島の暮らしは、島を歩くと見えてくる身近な景色の中にあります。</span></p><a class="textlink" href="about.html"><span data-en="About Ushima →" data-ja="島について →">島について →</span></a>
+   <figure class="integrated-photo life-extra mt-12"><div class="overflow-hidden"><img class="rv-img aspect-[4/3] w-full object-cover" alt="島で出会う風景" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/ducks.webp"/></div><figcaption class="mt-3 text-sm text-ink/60">島で出会う風景</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="section wrap pb-24 md:pb-44">
+ <div class="split reverse grid items-start gap-10 md:grid-cols-12 md:gap-8">
+  <div class="rv md:col-span-4 md:col-start-2 md:row-start-1 md:pt-16"><span class="eyebrow">03 / VISIT</span><h3 class="h2 !text-[1.7rem] md:!text-4xl"><span data-en="Arrive by boat" data-ja="船で渡る、小さな島">船で渡る、小さな島</span></h3><p class="mt-6"><span data-en="Regular boats connect Ushima with Miyakubo Port on Oshima and Oura Port on Hakatajima. Check the timetable before travelling." data-ja="鵜島へは大島の宮窪港、または伯方島の尾浦港から定期船で渡れます。訪れる前に運航時刻をご確認ください。">鵜島へは大島の宮窪港、または伯方島の尾浦港から定期船で渡れます。訪れる前に運航時刻をご確認ください。</span></p><a class="textlink" href="access.html"><span data-en="Plan your visit →" data-ja="アクセスを見る →">アクセスを見る →</span></a></div>
+  <figure class="photo md:col-span-6 md:col-start-7 md:row-start-1"><div class="overflow-hidden"><img class="rv-img aspect-[4/3] w-full object-cover md:aspect-[4/3.4]" alt="鵜島の海辺" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/beach.webp"/></div><figcaption class="mt-3 text-sm text-ink/60"><span data-en="Along the shore" data-ja="海辺の風景">海辺の風景</span></figcaption></figure>
+  <figure class="integrated-photo visit-extra md:col-span-4 md:col-start-8 md:-mt-8"><div class="overflow-hidden"><img class="rv-img aspect-[4/3] w-full object-cover" alt="島の小さな発見" decoding="async" loading="lazy" sizes="(max-width: 700px) 94vw, 48vw" src="assets/detail.webp"/></div><figcaption class="mt-3 text-sm text-ink/60">島の小さな発見</figcaption></figure>
+ </div>
+</section>
+
+<section class="magazine-end bg-sea py-28 text-foam md:py-48">
+ <div class="shell wrap rv"><span class="eyebrow">PLAN YOUR VISIT</span><h2 class="font-serif text-[2.6rem] font-bold leading-tight md:text-8xl">次の旅は、鵜島へ。</h2><p class="mt-8 max-w-md text-foam/80">小さな島だからこそ、船の時刻を確かめて、ゆっくり訪れてください。</p><a class="mt-10 inline-block border border-foam/60 px-8 py-4 transition-colors duration-500 hover:bg-foam hover:text-sea" href="access.html">アクセス・船の情報を見る ↗</a></div>
+</section>
+</main>
+
+<footer class="foot bg-ink py-8 text-sm text-foam/70"><div class="wrap flex flex-col gap-3 md:flex-row md:items-center md:justify-between"><span>© 2026 Discover USHIMA · <span data-en="Independently operated, unofficial website" data-ja="個人運営の非公式紹介サイト">個人運営の非公式紹介サイト</span></span><a class="transition-opacity hover:opacity-60" href="index.html"><span data-en="Back to top ↑" data-ja="トップページへ ↑">トップページへ ↑</span></a></div></footer>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),all=s=>[...document.querySelectorAll(s)],h=document.documentElement;
+const head=$('#head'),nav=$('#nav'),menu=$('#menu'),lang=$('#lang');
+const setMenu=o=>{nav.classList.toggle('hidden',!o);nav.classList.toggle('flex',o);head.classList.toggle('open',o);document.body.classList.toggle('overflow-hidden',o);menu.setAttribute('aria-expanded',o)};
+menu.addEventListener('click',()=>setMenu(menu.getAttribute('aria-expanded')!=='true'));
+nav.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+addEventListener('resize',()=>{if(innerWidth>=768)document.body.classList.remove('overflow-hidden')});
+lang.addEventListener('click',()=>{const c=h.lang==='ja'?'en':'ja';h.lang=c;all('[data-en]').forEach(e=>e.textContent=e.dataset[c]);lang.textContent=c==='ja'?'EN':'JA'});
+const onScroll=()=>head.classList.toggle('solid',scrollY>innerHeight*0.8);
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+all('.rv,.rv-img').forEach(e=>io.observe(e));
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+ const pars=all('[data-par]');
+ const par=()=>pars.forEach(p=>{const r=p.parentElement.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)p.style.transform=`translateY(${(r.top+r.height/2-innerHeight/2)*-0.08}px)`});
+ addEventListener('scroll',par,{passive:true});par();
+}
+})();
+</script>
+</body></html>
